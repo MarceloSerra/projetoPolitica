@@ -28,6 +28,7 @@ import { HabitacaoComponent } from './components/habitacao/habitacao.component';
 import { LazerComponent } from './components/lazer/lazer.component';
 import {MatInputModule} from '@angular/material/input';
 import {MatDividerModule} from '@angular/material/divider';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 
 
@@ -63,7 +64,8 @@ registerLocaleData(localePt, 'pt-BR');
     HttpClientModule,
     MatCardModule,
     MatInputModule,
-    MatDividerModule
+    MatDividerModule,
+    MatGridListModule
   ],
   providers:  [{provide: LOCALE_ID, useValue: 'pt-BR'}],
   bootstrap: [AppComponent]
