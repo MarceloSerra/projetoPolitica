@@ -8,5 +8,4 @@ export class PoliticaModel {
   name:string;
   photo:string;
   tags:string[];
-
 }

@@ -3,11 +3,11 @@ import { PoliticaApiService } from 'src/app/services/politica-api.service';
 import { PoliticaModel } from 'src/app/services/politica-model';
 
 @Component({
-  selector: 'app-mobilidade-acessibilidade',
-  templateUrl: './mobilidade-acessibilidade.component.html',
-  styleUrls: ['./mobilidade-acessibilidade.component.css']
+  selector: 'app-lazer',
+  templateUrl: './lazer.component.html',
+  styleUrls: ['./lazer.component.css']
 })
-export class MobilidadeAcessibilidadeComponent implements OnInit {
+export class LazerComponent implements OnInit {
 
   listaPolitica: PoliticaModel[];
 
@@ -16,9 +16,7 @@ export class MobilidadeAcessibilidadeComponent implements OnInit {
   ngOnInit(): void {
     this.politicaApi.listPolitica().subscribe((lista) =>
     {
-      this.listaPolitica = lista.filter(a => a.tags[0] === "Mobilidade Urbana",);
+      this.listaPolitica = lista.filter(a => a.tags[0] === "Lazer",);
     });
   }
 }
-
-
