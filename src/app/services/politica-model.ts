@@ -1,4 +1,7 @@
 export class PoliticaModel {
+  listPolitica() {
+    throw new Error('Method not implemented.');
+  }
 
   address:string;
   description:string;
