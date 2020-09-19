@@ -10,6 +10,7 @@ export class MobilidadeAcessibilidadeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }
