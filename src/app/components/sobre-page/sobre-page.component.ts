@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SobrePageComponent implements OnInit {
 
-  title = 'Reporte algo algo abaixo!';
+  title = 'Faça seu reporte!';
 
 
   constructor() { }

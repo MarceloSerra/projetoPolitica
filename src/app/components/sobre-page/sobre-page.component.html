@@ -3,42 +3,40 @@
 
 
   <h2>{{title}}</h2>
-
   <form class="example-form  report-form">
+      <mat-form-field class="example-full-width">
+        <mat-label>Nome:</mat-label>
+        <input matInput placeholder="Nome:" required>
+      </mat-form-field>
 
-    <mat-form-field class="example-full-width">
-      <mat-label>Nome:</mat-label>
-      <input matInput placeholder="Nome:" required>
-    </mat-form-field>
-
-    <mat-form-field class="example-full-width">
-      <mat-label>Endereço:</mat-label>
-      <input matInput placeholder="Endereço:" required>
-    </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Endereço:</mat-label>
+        <input matInput placeholder="Endereço:" required>
+      </mat-form-field>
 
 
-    <mat-form-field class="example-full-width">
-      <mat-label>Descrição:</mat-label>
-      <input matInput placeholder="Descrição:" required>
-    </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Descrição:</mat-label>
+        <input matInput placeholder="Descrição:" required>
+      </mat-form-field>
 
-    <mat-form-field appearance="fill">
-      <mat-label>Tipo:</mat-label>
-      <select matNativeControl required>
-        <option value="Mobilidade e Acessibilidade">Mobilidade e Acessibilidade</option>
-        <option value="Planejamento Urbano">Planejamento Urbano</option>
-        <option value="Lazer">Lazer</option>
-        <option value="Saneamento e Saúde">Saneamento e Saúde</option>
-        <option value="Educação">Educação</option>
-        <option value="Habitação">Habitação</option>
-      </select>
-    </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Tipo:</mat-label>
+        <select matNativeControl required>
+          <option value="Mobilidade e Acessibilidade">Mobilidade e Acessibilidade</option>
+          <option value="Planejamento Urbano">Planejamento Urbano</option>
+          <option value="Lazer">Lazer</option>
+          <option value="Saneamento e Saúde">Saneamento e Saúde</option>
+          <option value="Educação">Educação</option>
+          <option value="Habitação">Habitação</option>
+        </select>
+      </mat-form-field>
 
-      <button mat-raised-button color="primary">Upload de imagem</button>
+        <button type="file" mat-raised-button color="primary">Upload de imagem</button>
 
-    <br>
-    <br>
-    <button mat-raised-button color="warn">Reportar</button>
+      <br>
+      <br>
+      <button mat-raised-button color="warn">Reportar</button>
   </form>
 
 
