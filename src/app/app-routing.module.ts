@@ -33,6 +33,9 @@ const routes: Routes = [
   {
     path: 'lazer', component: LazerComponent,
   },
+  {
+    path: 'todos', component: ListaCardComponent,
+  },
 
 ];
 
