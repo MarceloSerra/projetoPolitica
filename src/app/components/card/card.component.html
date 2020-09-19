@@ -1,16 +1,32 @@
-<mat-card>
+<!-- <mat-card>
   <div>
-    <div>
-      <div class="card-requisicao"></div>
-      <img [src] = "photo">
-    </div>
-    <div>
-      <span>Name: {{ name }}</span><br>
-      <span>Endereço: {{ address }}</span><br>
-      <span>Descrição: {{ description }}</span><br>
+    <div  class="card-reporta">
+      <img [src] = "photo"/><br>
       <span>Classificação: {{ tags }}</span>
-
+      <div>
+        <span>Name: {{ name }}</span><br>
+        <span>Endereço: {{ address }}</span><br>
+        <span>Descrição: {{ description }}</span><br>
+      </div>
     </div>
   </div>
 
 </mat-card>
+ -->
+
+<mat-card>
+  <div>
+    <div class="card-report">
+      <img [src]="photo"/><br>
+      <span>{{ tags }}</span>
+
+      <div>
+        <span>Name: {{ name }} </span><br>
+        <span>Endereço: {{ address }}</span><br>
+        <span>Descrição: {{ description }}</span>
+      </div>
+    </div>
+  </div>
+
+</mat-card>
+

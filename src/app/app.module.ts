@@ -29,6 +29,7 @@ import { LazerComponent } from './components/lazer/lazer.component';
 import {MatInputModule} from '@angular/material/input';
 
 
+
 registerLocaleData(localePt, 'pt-BR');
 
 @NgModule({
@@ -44,7 +45,8 @@ registerLocaleData(localePt, 'pt-BR');
     PlanUrbanoComponent,
     HabitacaoComponent,
     LazerComponent
-  ],
+
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
