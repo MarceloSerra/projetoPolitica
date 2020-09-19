@@ -27,6 +27,7 @@ import { PlanUrbanoComponent } from './components/plan-urbano/plan-urbano.compon
 import { HabitacaoComponent } from './components/habitacao/habitacao.component';
 import { LazerComponent } from './components/lazer/lazer.component';
 import {MatInputModule} from '@angular/material/input';
+import {MatDividerModule} from '@angular/material/divider';
 
 
 
@@ -61,7 +62,8 @@ registerLocaleData(localePt, 'pt-BR');
     FormsModule,
     HttpClientModule,
     MatCardModule,
-    MatInputModule
+    MatInputModule,
+    MatDividerModule
   ],
   providers:  [{provide: LOCALE_ID, useValue: 'pt-BR'}],
   bootstrap: [AppComponent]
