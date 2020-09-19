@@ -25,6 +25,7 @@ import { SaudeSaneamentoComponent } from './components/saude-saneamento/saude-sa
 import { EducacaoComponent } from './components/educacao/educacao.component';
 import { PlanUrbanoComponent } from './components/plan-urbano/plan-urbano.component';
 import { HabitacaoComponent } from './components/habitacao/habitacao.component';
+import {MatInputModule} from '@angular/material/input';
 
 registerLocaleData(localePt, 'pt-BR');
 
@@ -54,7 +55,8 @@ registerLocaleData(localePt, 'pt-BR');
     // extra
     FormsModule,
     HttpClientModule,
-    MatCardModule
+    MatCardModule,
+    MatInputModule
   ],
   providers:  [{provide: LOCALE_ID, useValue: 'pt-BR'}],
   bootstrap: [AppComponent]

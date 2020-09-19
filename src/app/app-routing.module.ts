@@ -11,7 +11,15 @@ import { SobrePageComponent } from './components/sobre-page/sobre-page.component
 
 const routes: Routes = [
   {
-    path: '', component: MenuPagLayoutComponent,
+    path: '',
+    component: MenuPagLayoutComponent,
+    children:[
+      {
+        path: '',
+        component: SobrePageComponent,
+
+      }
+    ]
   },
   {
     path: 'educacao', component: EducacaoComponent,

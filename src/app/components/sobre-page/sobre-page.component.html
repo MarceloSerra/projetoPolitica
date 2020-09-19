@@ -1,9 +1,35 @@
-<h2>{{title}}</h2>
+<div class="hero-report">
+<mat-card>
 
-<input type="text">Nome: </input>
-<input type="text">Endereço: </input>
-<input type="text">Descrição: </input>
-<input type="text" >Foto: </input>
-<input type="checkbox"> Tipo de Problema </input>
 
+  <h2>{{title}}</h2>
+
+  <form class="example-form  report-form">
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Nome:</mat-label>
+      <input matInput placeholder="Nome:" required>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Endereço:</mat-label>
+      <input matInput placeholder="Endereço:" required>
+    </mat-form-field>
+
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Descrição:</mat-label>
+      <input matInput placeholder="Descrição:" required>
+    </mat-form-field>
+
+      <button mat-raised-button color="primary">Upload de imagem</button>
+
+    <br>
+    <br>
+    <button mat-raised-button color="warn">Reportar</button>
+  </form>
+
+
+</mat-card>
+</div>
 
