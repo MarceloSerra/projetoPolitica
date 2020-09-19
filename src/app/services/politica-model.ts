@@ -4,6 +4,6 @@ export class PoliticaModel {
   description:string;
   name:string;
   photo:string;
-  tags:[];
+  tags:string[];
 
 }
