@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PoliticaApiService } from 'src/app/services/politica-api.service';
+import { PoliticaModel } from 'src/app/services/politica-model';
 
 @Component({
   selector: 'app-plan-urbano',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlanUrbanoComponent implements OnInit {
 
-  constructor() { }
+  listaPolitica: PoliticaModel[];
+
+  constructor( private politicaApi: PoliticaApiService ) { }
 
   ngOnInit(): void {
+    this.politicaApi.listPolitica().subscribe((lista) =>
+    {
+      this.listaPolitica = lista.filter(a => a.tags[1] === "Planejamento Urbano",);
+    });
   }
-
 }
+
+

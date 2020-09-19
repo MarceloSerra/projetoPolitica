@@ -1,1 +1,16 @@
-<p>card works!</p>
+<mat-card>
+  <div>
+    <div>
+      <div class="card-requisicao"></div>
+      <img [src] = "photo">
+    </div>
+    <div>
+      <span>Name: {{ name }}</span><br>
+      <span>Endereço: {{ address }}</span><br>
+      <span>Descrição: {{ description }}</span><br>
+      <span>Classificação: {{ tags }}</span>
+
+    </div>
+  </div>
+
+</mat-card>
