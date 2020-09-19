@@ -8,7 +8,6 @@ const routes: Routes = [
   {
     path: '', component: MenuPagLayoutComponent,
     children: [
-      { path: '', component: ExemploComponent },
       { path: 'sobre', component: SobrePageComponent },
     ]
   },
