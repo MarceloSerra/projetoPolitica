@@ -16,3 +16,10 @@
   z-index: 1;
 }
 
+a img{
+  max-width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
