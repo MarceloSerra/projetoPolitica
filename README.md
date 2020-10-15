@@ -1,3 +1,10 @@
+</ReportaPolítica>
+
+# Overview
+
+Projeto desenvolvido durante o HACKATHON Iteris DECOLA - APOLLO utilizando o Framework Angular com o objetivo de ser um centralizador de Reportes feitos da sociedade de modo que seja simples a ação de reportar, bem como listar os reportes feitos.
+
+
 # Projeto
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.5.
